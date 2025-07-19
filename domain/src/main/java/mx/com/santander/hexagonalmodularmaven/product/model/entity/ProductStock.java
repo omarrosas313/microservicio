@@ -1,4 +1,4 @@
-package mx.com.santander.hexagonalmodularmaven.client.model.entity;
+package mx.com.santander.hexagonalmodularmaven.product.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class ClientEmail {
+public class ProductStock {
 
-    private String email;
+    private int stock;
 }

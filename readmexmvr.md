@@ -5,6 +5,7 @@
 
 
 3. se implementa patron value object en entidad client.
+  - de igual manera con producto y eventualmente con venta
 
 4. se agrega dto (ClientDto)
 
@@ -28,6 +29,7 @@
 [X] implementacion paquete entity.
     - se genero clase Client y su respectivas clases para value object.
     - se genero clase dto, se requiere implementar.*investigar*
+    [ ] implementar dto´s (client y producto.)
 
 [ ] implementar clase.
 
@@ -37,6 +39,11 @@
     [X] metodos de interfaces.
         se implemento metodos getById, getAll dentro de dao.
         se implemento create, update, delete. dentro de repository.
+    [ ] CRUD productos.
+      [ ] implementacion de interfaces.
+
+
+    [ ]  Modulo compra productos. (dentro directorio sale.)
 
 [ ] crear archivos service. 
 
@@ -48,6 +55,7 @@
 
 
 ---------------------
+# indicaciones proyecto arquitectura hexagonal.
 Tienda Online:
 1.- Módulo Clientes:
     - CRUD de clientes con los siguientes datos:
