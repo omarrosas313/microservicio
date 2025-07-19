@@ -7,7 +7,7 @@
 3. se implementa patron value object en entidad client.
   - de igual manera con producto y eventualmente con venta
 
-4. se agrega dto (ClientDto)
+4. se agrega dto (ClientDto, productDto)
 
 5. se agrega estructura de port.
     - se agrego paquete dao y repository. dentro de cada uno con una interfaz. *ClientDao, ClientRepository*
@@ -29,13 +29,17 @@
 [X] implementacion paquete entity.
     - se genero clase Client y su respectivas clases para value object.
     - se genero clase dto, se requiere implementar.*investigar*
-    [ ] implementar dto´s (client y producto.)
+    [X] implementar dto´s. modulo cliente
+    [X] implementar dto´s. modulo producto
 
-[ ] implementar clase.
+**19/07/25**
+[-] implementar clases service dentro de cliente y product.
+
 
 [X] desarrollar interfaces de paquete port.
     [ ] CRUD de clientes
     - a traves de estas interfaces se interactua con la entidad. estas interfaces nos indican que se hace.
+
     [X] metodos de interfaces.
         se implemento metodos getById, getAll dentro de dao.
         se implemento create, update, delete. dentro de repository.
@@ -45,8 +49,8 @@
 
     [ ]  Modulo compra productos. (dentro directorio sale.)
 
-[ ] crear archivos service. 
 
+**logica de negocios dentro de cliente**
 [ ] Validar que los datos sean correctos y únicos.
         *se implementara en paquete service de client*
     [?] Mandar un mensaje en Kafka al topic "clientes_creados" con los datos del cliente creado. **investigar**

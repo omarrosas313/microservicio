@@ -1,4 +1,4 @@
-package mx.com.santander.hexagonalmodularmaven.client.model.dto;
+package mx.com.santander.hexagonalmodularmaven.client.model.dto.command;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,11 +7,10 @@ import lombok.Setter;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
+@Getter 
 @Setter
-public class ClientDto {
-    
-    private Long id;
+public class ClientCreateCommand {
+
     private String name;
     private String lastname;
     private String email;

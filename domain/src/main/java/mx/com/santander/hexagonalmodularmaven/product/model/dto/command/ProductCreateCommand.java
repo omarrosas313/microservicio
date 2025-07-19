@@ -1,4 +1,4 @@
-package mx.com.santander.hexagonalmodularmaven.product.model.dto;
+package mx.com.santander.hexagonalmodularmaven.product.model.dto.command;
 
 import java.math.BigDecimal;
 
@@ -11,10 +11,10 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ProductDto {
+public class ProductCreateCommand {
 
-    private Long id;
     private String name;
     private BigDecimal price;
     private int stock;
+
 }
