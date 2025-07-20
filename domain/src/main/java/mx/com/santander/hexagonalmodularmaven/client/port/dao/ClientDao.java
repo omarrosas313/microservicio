@@ -7,6 +7,7 @@ import mx.com.santander.hexagonalmodularmaven.client.model.entity.Client;
 public interface ClientDao {
 
     Client getById(Long id);
+    Client getByEmail(String email);
     List<Client> getAll();
 
 }

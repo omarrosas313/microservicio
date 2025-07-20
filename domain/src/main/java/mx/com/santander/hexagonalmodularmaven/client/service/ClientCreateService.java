@@ -1,22 +1,31 @@
 package mx.com.santander.hexagonalmodularmaven.client.service;
 
+import lombok.RequiredArgsConstructor;
+import mx.com.santander.hexagonalmodularmaven.client.model.dto.command.ClientCreateCommand;
 import mx.com.santander.hexagonalmodularmaven.client.model.entity.Client;
+import mx.com.santander.hexagonalmodularmaven.client.port.dao.ClientDao;
 import mx.com.santander.hexagonalmodularmaven.client.port.repository.ClientRepository;
 
+@RequiredArgsConstructor
 public class ClientCreateService {
 
-    // servicio que crea usurio.
-    // este servicio solo hara uso de repository ya que no requiere traer registros.
+    private final ClientDao clientDao;
+    private final ClientRepository clientRepository; 
 
-    private ClientRepository cliRepository; // se va a realizar uso de repository para realizar persistencia.
+    public Client execute( ClientCreateCommand clientCommmand ){
 
-//    - Validar que los datos sean correctos y únicos.
-//    - Mandar un mensaje en Kafka al topic "clientes_creados" con los datos del cliente creado.
+        //validaciones
+        if( clientCommmand.getName() == null && clientCommmand.getEmail() == null ){ 
 
-    public Client execute(Client client){
+            throw new IllegalArgumentException("Campos Nombre/email obligatorios."); 
+        }
+        if( clientDao.getByEmail( clientCommmand.getEmail() ) != null ){
+            throw new IllegalArgumentException("Email ya registrado.");
+        }
 
-        
-        return new Client();
+        Client client = new Client().create(clientCommmand);
+
+        return clientRepository.create(client);
     }
 
 

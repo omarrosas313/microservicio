@@ -18,9 +18,8 @@
 6. se implementan componentes de paquete service.
     estos son clases java, las cuales utilizan las interfaces port.
     se implementa logica de negocio, servicios edicion, creacion, etc.. 
-
-
-
+    - se realizo la implementacion de los archivos service principal. Falta el desarrollo de UpdateService, DeleteService; para los dos modulos.
+    
 
 
 # to-do
@@ -32,22 +31,29 @@
     [X] implementar dto´s. modulo cliente
     [X] implementar dto´s. modulo producto
 
-**19/07/25**
 [-] implementar clases service dentro de cliente y product.
+  - se realizo servicio create. 
+  [X] validar si la condicion elementos unicos.
 
 
 [X] desarrollar interfaces de paquete port.
-    [ ] CRUD de clientes
+    [/] CRUD de clientes
     - a traves de estas interfaces se interactua con la entidad. estas interfaces nos indican que se hace.
-
     [X] metodos de interfaces.
         se implemento metodos getById, getAll dentro de dao.
         se implemento create, update, delete. dentro de repository.
-    [ ] CRUD productos.
-      [ ] implementacion de interfaces.
-
-
+    [/] CRUD productos.
+    [X] implementacion de interfaces.
     [ ]  Modulo compra productos. (dentro directorio sale.)
+
+[ ] implementar modulo ventas( sale ).
+[ ] desarrollar capa application.
+[ ] desarrollar capa infra
+
+**19/07/25**
+- se implementaron algunos archivos service. (create, getById, getAll ).
+- de igual manera con modulo clientes.
+
 
 
 **logica de negocios dentro de cliente**
