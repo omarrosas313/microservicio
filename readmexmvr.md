@@ -47,13 +47,20 @@
     [ ]  Modulo compra productos. (dentro directorio sale.)
 
 [ ] implementar modulo ventas( sale ).
-[ ] desarrollar capa application.
-[ ] desarrollar capa infra
+
+
 
 **19/07/25**
 - se implementaron algunos archivos service. (create, getById, getAll ).
 - de igual manera con modulo clientes.
 
+**21/07/25**
+[X] desarrollar capa application.
+    - se desarrollo clases handler para cliente y producto. se generaron los handlers principales (create, byId)
+    - se creo dtoMapper, clase command y query. para cliente y producto.
+  
+[ ] implementar modulo venta.
+[ ] desarrollar capa infra
 
 
 **logica de negocios dentro de cliente**
